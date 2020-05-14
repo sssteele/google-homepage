@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+  <html>
+      <head>
+          <title>Google</title>
+          <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 10px 0 0 0;
+            }
+            li {
+                font-family: Arial;
+                margin-left: 7px;
+                margin-right: 7px;
+                display: inline-flex; 
+            }
+            li:hover {
+                text-decoration: underline;
+            }
+            #topleft {
+                color: #000;
+                opacity: 0.75;
+                font-size: 13px;
+            }
+            #topright {
+                color: #222;
+                font-size: 13px;
+            }
+            #sign-in {
+                background-color: #4285f4;
+                color: #fff;
+                width: 60px; 
+                height: 20px; 
+                vertical-align: bottom;
+                text-align: center; 
+                border: solid 7px #4285f4;
+                font-weight: bold;
+                border-radius: 2px;
+            }
+            #sign-in:hover {
+                text-decoration: none;    
+            }
+            #apps {
+                height: 30px;
+                width: 30px;
+                background: url("apps.jpg") no-repeat;
+            }
+            #apps:hover {
+                background: url("appshighlight.jpg") no-repeat;
+            }
+            .google-logo {
+                padding-top: 13.5%;
+                padding-bottom: 25px;
+                text-align: center;
+                display: block;
+                margin-left: 35%;
+                margin-right: auto;
+                width: 272;
+                height: 92;
+            }
+            .buttons {
+                margin-left: 33%;
+            }
+            button {
+                font-family: Arial;
+                font-size: 14px;
+                color: #757575;
+                height: 35px;
+                margin-right: 5px;
+                margin-left: 5px;
+                position: flex;
+                flex: center;
+            }
+            button:hover {
+                color: black;
+                box-shadow: 0 0 1px rgba(0,0,0,1);
+            }
+            .footer {
+                background-color: #f2f2f2; 
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                left: 0px;
+                color: #5f6368; 
+                font-size: 14px;
+                padding-left: 27px;
+                padding-top: 5px;
+            }
+            #search-bar {
+                position: relative;
+            }
+            #search-bar .search-pic {
+                position: absolute;
+                top: 15px;
+                left: 200px;
+            }
+            .searchbar {
+                border-radius: 25px;
+                border: 1px solid lightgrey;
+                padding: 15px;
+                width: 400px;
+                height: 15px; 
+                margin-top: 35x;
+                margin-bottom: 30px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+            .searchbar:hover {
+                box-shadow: 0 0 10px rgba(0,0,0,0.19), 0 2px 2px rgba(0,0,0,0.23); 
+            }
+            .item-right {
+                float: right;
+            }
+          </style>
+      </head>
+      <body>
+          <div id="navbar">
+            <ul> 
+                <li id="topleft">About</li>
+                <li id="topleft">Store</li>
+                <li style="float:right" class="item-right" id="sign-in">Sign in</li>
+                <li id="topright" class="item-right"><div id="apps"></div><li>
+                <li id="topright" class="item-right">Images</li>
+                <li id="topright" class="item-right">Gmail</li>
+              </div>
+            </ul>
+          </div>
+          <div>
+            <img class="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+            <div id="search-bar">
+                <input type="text" class="searchbar" placeholder="Sigmund Freud">
+                <img class="search-pic" src="magnifying_glass.jpg"/>
+            </div>
+            <div class="buttons">
+              <button>Google Search</button>
+              <button>I'm Feeling Lucky</button>
+            </div>
+          </div>
+      </body>
+      <footer class="footer">
+          <div id="bot-navbar">
+            <ul>
+              <li>Advertising</li>
+              <li>Business</li>
+              <li>How Search works</li>
+              <li class="item-right">Settings</li>
+              <li class="item-right">Terms</li>
+              <li class="item-right">Privacy</li>
+            <ul>
+          </div>
+      </footer>
+  </html>
